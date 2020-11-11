@@ -14,8 +14,9 @@ var app = new Vue (
             aggiungiTodo(){
                 this.lista_todo.push(this.nuovo_todo)
             },
-            togliTodo(){
-                    this.lista_todo.splice(3, 1)
+            togliTodo(i, el){
+                console.log(el)
+                this.lista_todo.splice(i, 1)
             }
         }
     }

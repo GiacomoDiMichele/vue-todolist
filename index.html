@@ -14,7 +14,7 @@
                     <button @click="aggiungiTodo" id="pulsante-nuovo-todo">aggiungi To-Do</button>
                 </div>
                 <ul id="lista_todo">
-                    <li @click="togliTodo" v-for="element in lista_todo">
+                    <li @click="togliTodo(indice, element)" v-for="element, indice in lista_todo">
                         {{ element }}
                     </li>
                 </ul>
