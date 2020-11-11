@@ -14,6 +14,5 @@ var app = new Vue (
                 this.lista_todo.push(this.nuovo_todo)
             }
         }
-
     }
 )
